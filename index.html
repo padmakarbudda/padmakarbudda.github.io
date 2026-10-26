@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17181c">
+  <meta name="description" content="Explore Padmakar Budda’s personal portfolio: projects, experience, skills, certifications, and continued learning.">
+  <meta property="og:title" content="Padmakar Budda | Portfolio">
+  <meta property="og:description" content="My work. My journey. A little of what comes next.">
+  <meta property="og:url" content="https://padmakarbudda.github.io/">
+  <link rel="canonical" href="https://padmakarbudda.github.io/">
+  <title>Padmakar Budda | Portfolio</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./content.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="draft-banner" class="draft-banner" hidden>Local draft preview <span>Only visible in this browser.</span><a href="./editor.html">Back to editor ↗</a><a href="./index.html">Exit preview</a></div>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#home" aria-label="Portfolio home"><span class="brand-monogram" aria-hidden="true">pb<span>↗</span></span><span class="brand-name">Padmakar Budda</span></a>
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false"><span>Menu</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation"></nav>
+  </header>
+  <main id="main">
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow hero-eyebrow"><span class="small-line"></span> A PERSONAL PORTFOLIO</p>
+        <div class="portrait-wrap"><div class="portrait" id="hero-portrait"><span>PB</span></div><span class="portrait-spark" aria-hidden="true">✦</span></div>
+        <h1 id="hero-title">PADMAKAR <span>BUDDA<span class="name-dot">.</span></span></h1>
+        <p class="hero-role" id="hero-role" hidden></p>
+        <p class="hero-tagline" id="hero-tagline">My work. My journey. A little of what comes next.</p>
+        <div class="hero-actions"><a class="button button-primary" id="explore-button" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="text-link hero-github" id="hero-github" href="https://github.com/padmakarbudda" target="_blank" rel="noopener noreferrer">View GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="hero-bottom"><span>WORK · EXPERIENCE · CONTINUED LEARNING</span><a id="scroll-link" href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <div id="sections"></div>
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="section-shell contact-shell"><p class="eyebrow">SAY HELLO</p><h2 id="contact-title">Good things start<br>with a <em>conversation.</em></h2><p class="contact-copy">Have a project in mind, a question, or just want to connect?</p><div id="contact-links" class="contact-links"></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="#home">pb<span>↗</span></a><p>© <span id="year"></span> <span id="footer-name">Padmakar Budda</span></p><div><a href="./guide.html">Portfolio guide</a><a href="#home">Back to top ↑</a></div></footer>
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">PROJECT NOTES</span><button class="icon-button" id="close-dialog" type="button" aria-label="Close project details">×</button></div><div id="dialog-content"></div></dialog>
+  <noscript><div class="noscript-note">Please enable JavaScript to view the portfolio sections. You can also find Padmakar on <a href="https://github.com/padmakarbudda">GitHub</a>.</div></noscript>
+</body>
+</html>

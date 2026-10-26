@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Portfolio guide | Padmakar Budda</title><link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css"></head>
+<body class="guide-page">
+<header class="tool-header"><a class="brand" href="./index.html"><span class="brand-monogram">pb<span>↗</span></span><span class="brand-name">PORTFOLIO GUIDE</span></a><a href="./index.html">Back to portfolio ↗</a></header>
+<main class="guide-main">
+<p class="eyebrow">MAKE IT YOURS</p><h1>A portfolio that<br><em>grows with you.</em></h1>
+<p class="lead">Add your story, showcase your work, and keep everything up to date. This website uses plain HTML, CSS, and JavaScript, so it can run directly on GitHub Pages.</p>
+<a class="button button-primary" href="./editor.html">Open content editor <span aria-hidden="true">↗</span></a>
+<div class="guide-note"><strong>About this first version.</strong> Your original GitHub Pages URL returned a 404 when checked on October 26, 2026. Your public GitHub repository contained a license file but no portfolio content. Your name and GitHub link are included; employment, credentials, skills, projects, contact details, and education are left for you to supply. The design takes inspiration from the reference’s single-page flow, circular introduction, and pink accent. Its text, photo, projects, and professional history have not been copied.</div>
+<nav class="guide-toc" aria-label="Guide contents"><a href="#edit">Edit content</a><a href="#showcase">What to include</a><a href="#sections">Add sections</a><a href="#publish">Publish on GitHub</a><a href="#files">Files</a></nav>
+<section id="edit"><h2>01 / The easiest way to update your portfolio</h2>
+<ol><li>Open the <a href="./editor.html">content editor</a>. Fill in your profile and add entries to the sections you want.</li><li>Select <strong>Preview draft</strong> to see your changes. Drafts stay in this browser and are not published or shared.</li><li>Select <strong>Download content.js</strong>. Replace the existing <code>content.js</code> in your website folder with the downloaded file. If your browser names it <code>content (1).js</code>, rename it to <code>content.js</code>.</li><li>Upload the replacement to your GitHub repository and commit. Once GitHub Pages is enabled, commits to its configured source update the live site.</li></ol>
+<p>You can also edit <code>content.js</code> in a text editor. It is the single source of truth for portfolio text, links, section visibility, and ordering.</p>
+<h3>Add a profile photo or résumé</h3><p>Place a photo at <code>assets/profile.jpg</code> and a résumé at <code>assets/resume.pdf</code>. Enter those relative paths in the editor’s Profile tab. You can use other filenames too. Upload the actual files along with your content changes. The résumé link appears automatically when a path is set.</p>
+<p>Use the editor through the hosted preview or a local web server. For a local preview, run <code>python3 -m http.server 8000</code> inside the extracted website folder, then open <code>http://localhost:8000</code>. Directly opening files may limit browser draft storage.</p></section>
+<section id="showcase"><h2>02 / What makes each section useful</h2>
+<table><thead><tr><th>Section</th><th>What to add</th><th>Make it convincing</th></tr></thead><tbody>
+<tr><td>About</td><td>Target role, interests, short background, location, and contact links.</td><td>Use 2–3 short paragraphs. Explain what you do and what kind of work you want.</td></tr>
+<tr><td>Projects</td><td>Title, description, screenshot, category, tools, demo, and source code.</td><td>Pick 3–6 strong projects. Describe the problem, your contribution, and the outcome. Include real measurements where available.</td></tr>
+<tr><td>Experience</td><td>Role, employer, dates, location, and 2–4 achievement bullets.</td><td>Use “Built X using Y, resulting in Z.” Keep the result factual. Internships and freelance work belong here too.</td></tr>
+<tr><td>Skills</td><td>Groups of relevant languages, frameworks, platforms, and methods.</td><td>List skills you can discuss or demonstrate. Avoid arbitrary percentage bars.</td></tr>
+<tr><td>Certifications</td><td>Certification name, issuer, issue date, optional expiration, and verification URL.</td><td>Link to a public credential page. Label a course completion accurately.</td></tr>
+<tr><td>Education</td><td>Degree or program, institution, dates, and relevant coursework or achievements.</td><td>Keep it brief. Add GPA only if you want to share it.</td></tr>
+<tr><td>Other sections</td><td>Open source, research, writing, awards, volunteering, talks, or leadership.</td><td>Add a custom section only when you have something meaningful to show.</td></tr>
+</tbody></table><p>Project category filters appear automatically when projects span more than one category. A project’s “Read the story” button appears when you add a challenge, approach, or result. Links are shown only when filled in.</p></section>
+<section id="sections"><h2>03 / Add, hide, and rearrange sections</h2>
+<p>In the editor, open <strong>Sections & more</strong>. Use the checkbox beside a section to show or hide it, and the arrow buttons to reorder it. Disable <strong>Show empty sections</strong> when you want to show only populated sections.</p>
+<p>Choose <strong>Add custom section</strong> for awards, publications, volunteering, or anything else. Give it a title and description, then add entries with a title, details, and an optional link. It joins the navigation automatically.</p>
+<h3>Prefer editing the file directly?</h3><p>Here is an illustrative custom section. Replace the example with your real details.</p>
+<pre><code>// Add this object inside customSections: [ ... ]
+{
+  id: "custom-volunteering",
+  title: "Volunteering",
+  description: "Community work and contributions.",
+  enabled: true,
+  items: [
+    {
+      title: "Your role — Organization",
+      description: "What you contributed and its impact.",
+      url: "",
+      linkLabel: "Learn more"
+    }
+  ]
+}
+</code></pre><p>Custom IDs must start with <code>custom-</code> and use lowercase letters, digits, and hyphens. The editor handles this for you.</p></section>
+<section id="publish"><h2>04 / Publish at your GitHub Pages address</h2>
+<p>To use your requested address, <strong>padmakarbudda.github.io</strong>, the repository must be named <code>padmakarbudda.github.io</code>.</p>
+<ol><li>Sign in to GitHub. Create a public repository named <code>padmakarbudda.github.io</code>, or open that repository if it already exists.</li><li>Extract the downloadable website ZIP. Upload its <strong>contents</strong> to the repository root: <code>index.html</code>, <code>content.js</code>, <code>app.js</code>, <code>styles.css</code>, the <code>assets</code> folder, and the editor and guide files. Keep <code>index.html</code> at the top level, rather than inside another folder.</li><li>Commit the files to <code>main</code>.</li><li>Open <strong>Settings → Pages → Build and deployment</strong>. Set Source to <strong>Deploy from a branch</strong>, select <strong>main</strong> and <strong>/(root)</strong>, then save.</li><li>Wait for GitHub’s Pages deployment to finish. Use the published URL shown in the Pages settings to verify it.</li></ol>
+<div class="guide-note">Your existing repository is named <code>portfolio-website</code>. Publishing from that repository would normally use a project URL ending in <code>/portfolio-website/</code>. Create the user-site repository above to use the root address you requested. This website uses relative file paths and works at either location.</div>
+<p>Official instructions: <a href="https://docs.github.com/en/pages/quickstart" target="_blank" rel="noopener noreferrer">GitHub Pages quickstart</a> and <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site" target="_blank" rel="noopener noreferrer">configure a publishing source</a>.</p>
+<h3>If you still see a 404</h3><p>Check the repository name, ensure <code>index.html</code> is in the selected folder on <code>main</code>, and review the deployment result in the repository’s Actions tab. GitHub’s <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites" target="_blank" rel="noopener noreferrer">404 troubleshooting guide</a> covers the common causes.</p></section>
+<section id="files"><h2>05 / Know your files</h2><table><thead><tr><th>File</th><th>Purpose</th></tr></thead><tbody><tr><td><code>index.html</code></td><td>Main portfolio page and metadata.</td></tr><tr><td><code>content.js</code></td><td>All personal content and section settings.</td></tr><tr><td><code>styles.css</code></td><td>Colors, typography, layout, and responsive styles.</td></tr><tr><td><code>app.js</code></td><td>Renders the portfolio, filters projects, and opens project stories.</td></tr><tr><td><code>editor.html</code> + <code>editor.js</code></td><td>Browser-based content editing. Downloads content; does not publish.</td></tr><tr><td><code>guide.html</code></td><td>This guide.</td></tr><tr><td><code>assets/</code></td><td>Favicon, plus any photos, project screenshots, or résumé you add.</td></tr><tr><td><code>.nojekyll</code></td><td>Keeps GitHub Pages serving the files without a Jekyll build.</td></tr></tbody></table>
+<p>No installation, package manager, database, or build step is required. The contact area uses your actual email and social links; it does not simulate a message form.</p></section>
+</main><footer class="tool-footer"><a href="./editor.html">Edit your content ↗</a> &nbsp;·&nbsp; <a href="./index.html">View portfolio ↗</a></footer>
+</body></html>
