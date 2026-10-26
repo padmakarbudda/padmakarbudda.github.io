@@ -1,40 +1,59 @@
-/*
- * Your portfolio content lives here. No build tools required.
- * Open editor.html for a form-based editor, or edit this file directly.
- * Blank links are automatically hidden. Keep only claims you can support.
- */
+/* Portfolio content. Generated with the portfolio editor. */
 window.PORTFOLIO = {
-  profile: {
-    name: "Padmakar Budda",
-    tagline: "My work. My journey. A little of what comes next.",
-    role: "",
-    location: "",
-    about: [
-      "Hi, I’m Padmakar. Welcome to my corner of the internet.",
-      "This is a place for my projects, experience, skills, and continued learning. Take a look around, or connect with me on GitHub."
+  "profile": {
+    "name": "Padmakar Budda",
+    "tagline": "Analyst | Analytics Engineer",
+    "role": "",
+    "location": "",
+    "about": [
+      "Expert Data Analyst and Analytics Engineer with extensive experience designing automated SQL data models, building interactive dashboards, and optimizing ETL pipelines."
     ],
-    email: "",
-    github: "https://github.com/padmakarbudda",
-    linkedin: "",
-    resume: "",
-    portrait: ""
+    "email": "padmakarbuddawork@gmail.com",
+    "github": "https://github.com/padmakarbudda",
+    "linkedin": "",
+    "resume": "",
+    "portrait": ""
   },
-  settings: {
-    showEmptySections: true,
-    accent: "rose"
+  "settings": {
+    "showEmptySections": true,
+    "accent": "rose"
   },
-  sections: [
-    { id: "about", label: "About", enabled: true },
-    { id: "projects", label: "Projects", enabled: true },
-    { id: "experience", label: "Experience", enabled: true },
-    { id: "skills", label: "Skills", enabled: true },
-    { id: "certifications", label: "Certifications", enabled: true },
-    { id: "education", label: "Education", enabled: true }
+  "sections": [
+    {
+      "id": "about",
+      "label": "About",
+      "enabled": true
+    },
+    {
+      "id": "projects",
+      "label": "Projects",
+      "enabled": true
+    },
+    {
+      "id": "experience",
+      "label": "Experience",
+      "enabled": true
+    },
+    {
+      "id": "skills",
+      "label": "Skills",
+      "enabled": true
+    },
+    {
+      "id": "certifications",
+      "label": "Certifications",
+      "enabled": true
+    },
+    {
+      "id": "education",
+      "label": "Education",
+      "enabled": true
+    }
   ],
-  projects: [],
-  experience: [],
-  skills: [],
-  certifications: [],
-  education: [],
-  customSections: []
+  "projects": [],
+  "experience": [],
+  "skills": [],
+  "certifications": [],
+  "education": [],
+  "customSections": []
 };
