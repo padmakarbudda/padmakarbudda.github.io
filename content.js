@@ -9,7 +9,6 @@ window.PORTFOLIO = {
       "Expert Data Analyst and Analytics Engineer with extensive experience designing automated SQL data models, building interactive dashboards, and optimizing ETL pipelines."
     ],
     "email": "padmakarbuddawork@gmail.com",
-    "github": "https://github.com/padmakarbudda",
     "linkedin": "",
     "resume": "",
     "portrait": ""
